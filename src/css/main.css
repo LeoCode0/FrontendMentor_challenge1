@@ -20,10 +20,11 @@ body{
     width: 100vw;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .article{
-    margin: 70px auto;
+    margin: 70px auto 20px auto;
     width: 85%;
     height: 70%;
     border: 0;
@@ -62,6 +63,7 @@ body{
     justify-content: space-evenly;
     position: absolute;
     bottom: 10px;
+    left: 20px;
 }
 
 .article__profile--image{
@@ -91,6 +93,10 @@ body{
     justify-content: center;
     position: relative;
     z-index: 3;
+}
+
+.personal{
+    display: flex;
 }
 
 .profile--info__icon{
@@ -141,15 +147,56 @@ body{
     margin-bottom: 10px;
     color: white;
     display: flex;
-    font-size: 20px;
-    margin-left: 20px;
+    font-size: 22px;
 }
 
 .modal__shareIcons i{
     margin: 0 6px;
 }
 
-.modal__shareIcons:first {
-    color: blue;
+
+.modal__shareIcons i:hover{
+    cursor: pointer;
 }
 
+
+.modal__shareIcons.fa-facebook-square{
+    margin: 0;
+}
+
+@media screen and (min-width: 1024px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .article{
+        display: flex;
+        height: 30%;
+        width: 45%;
+    }
+
+    .article__profile{
+        left: auto;
+        right: 10px;
+    }
+
+    .article__image{
+        height: 100%;
+        width: 30%;
+        object-fit: cover;
+    }
+
+    .modal{
+        height: 50px;
+        width: max-content;
+        top: 55%;
+        right: 0;
+        border-radius: 10px;
+    }
+
+    .modal__shareIcons{
+        margin-left: 30px;
+    }
+}
