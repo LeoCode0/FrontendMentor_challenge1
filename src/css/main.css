@@ -20,7 +20,7 @@ body{
     width: 100vw;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .article{
@@ -172,6 +172,7 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        overflow-y: hidden;
     }
 
     .article{
