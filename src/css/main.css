@@ -26,7 +26,7 @@ body{
 .article{
     margin: 70px auto 20px auto;
     width: 85%;
-    height: 70%;
+    height: 569px;
     border: 0;
     border-radius: 10px;
     background-color: white;
@@ -38,6 +38,8 @@ body{
     height: 180px;
     width: 100%;
     object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .container{
@@ -70,11 +72,12 @@ body{
     border-radius: 50%;
     height: 50px;
     width: 50px;
+    margin-right: 20px;
 }
 
 .profile--info__name{
     margin: 0 0 5px 0;
-    font-size: var(--normal_size);
+    font-size: 12px;
     padding: 0;
 }
 
@@ -174,18 +177,21 @@ body{
     .article{
         display: flex;
         height: 30%;
-        width: 45%;
+        width: 50%;
     }
 
     .article__profile{
         left: auto;
-        right: 10px;
+        left: 26%;
     }
 
     .article__image{
         height: 100%;
-        width: 30%;
+        width: 40%;
         object-fit: cover;
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
 
     .modal{
